@@ -22,7 +22,7 @@ export class ClientsComponent implements OnInit {
       id : [''],
       name : [''],
       email : [''],
-      rg : [''],
+      curso : [''],
       telefone : ['']
 
     });

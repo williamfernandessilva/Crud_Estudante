@@ -23,8 +23,8 @@
       <input type="email" formControlName="email"   class="form-control" id="email" placeholder="Email">
     </div>
     <div class="mb-3">
-      <label for="rg" class="form-label">Rg:</label>
-      <input type="text" formControlName="rg"    class="form-control" id="rg" placeholder="Rg">
+      <label for="curso" class="form-label">Curso:</label>
+      <input type="text" formControlName="curso"    class="form-control" id="curso" placeholder="Curso">
     </div>
 
     <div class="mb-3">
@@ -53,24 +53,23 @@
       <th scope="col">Id</th>
       <th scope="col">Nome</th>
       <th scope="col">Email</th>
-      <th scope="col">Rg</th>
+      <th scope="col">Curso</th>
       <th scope="col">Telefone</th>
 
 
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let client of clients" >
-      <th scope="row">{{client.id}}</th>
-      <td>{{client.name}} </td>
-      <td>{{client.email}}</td>
-      <td>{{client.rg}}</td>
-      <td>{{client.telefone}}</td>
+    <tr *ngFor="let estudante of clients">
+      <th scope="row">{{estudante.id}}</th>
+      <td>{{estudante.name}}</td>
+      <td>{{estudante.email}}</td>
+      <td>{{estudante.curso}}</td>
+      <td>{{estudante.telefone}}</td>
+      <td>
 
-
-
-      <button class="" (click)="edit(client)">Editar</button>
-      <button class="" (click)="delete(client)">Excluir</button>
+        <button type="button" class="btn btn-dark me-1" (click)="edit(estudante)" >Editar</button>
+        <button type="button" class="btn btn-dark" (click)="delete(estudante)">Excluir</button>
 
 
   </tbody>

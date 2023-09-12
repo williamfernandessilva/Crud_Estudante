@@ -7,7 +7,7 @@ import {Client} from './client';
   providedIn: 'root'
 })
 export class ClientService {
-  url = "http://localhost:8080/products";
+  url = "http://localhost:8080/estudantes";
  constructor (private http: HttpClient){ }
 
 
